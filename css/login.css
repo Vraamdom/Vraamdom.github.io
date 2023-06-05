@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 1200px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.formulario{
+    background-color: white;
+    width: 400px;
+    height: 450px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.formulario h2{
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+}
+.inputs{
+    position: relative;
+    margin: 30px 0px;
+    width: 300px;
+    border-bottom: 2px solid black;
+}
+.inputs label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+.inputs input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size:16px ;
+}
+.inputs i{
+    position: absolute;
+    right: 8px;
+    top: 20px;
+}
+.recordar{
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: center;
+}
+.recordar label input{
+    margin-right: 5px;
+}
+.recordar label a{
+    color: black;
+    text-decoration: none;
+}
+.recordar label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .25s;
+}
+button:active{
+    transform: scale(.97);
+}
+.registarse{
+    text-align: center;
+    font-size: 16px;
+    margin: 25px 0 10px;
+}
+.registarse p a{
+    color: black;
+    text-decoration: none;
+}
+.registarse p a:hover{
+    text-decoration: underline;
+}

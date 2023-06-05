@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 85px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo a{
+    font-size: 28px;
+    padding-left: 20px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-weight: 500;
+    margin-left: 5px;
+    margin-right: 9px;
+}
+.navbar a::after{
+    content: "";
+    height: 2px;
+    width: 0px;
+    background-color: #fff;
+    display: block;
+    transition: .5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+}
+.main .container1, .container2, .container3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.main .container1 h5, .container2 h5, .container3 h5{
+    font-size: 36px;
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+    text-align: center;
+}
+.main .separador{
+    width: 45%;
+    margin-top: 10px;
+    border-top: 2px solid black;
+}
+.main .container1 .elementos{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 10px;
+}
+.main .container1 .elementos p{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+.main .container2 .elementos2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main .container2 .columna{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 10px;
+}
+.main .container2 .columna p{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 0px 15px 0px;
+}
+.main .container3 p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 0px 15px 0px;
+}
+.footer{
+    width: 100%;
+    background-color: black;
+}
+.footer .hijo-footer{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 35px 0px;
+}
+.footer .hijo-footer .caja{
+    width: 100%;
+    height: 100%;
+}
+.footer .hijo-footer .caja h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.footer .hijo-footer .caja p{
+    color: white;
+    margin-bottom: 10px;
+}
+.footer .hijo-footer .caja .logofooter h2{
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+}
+.footer .hijo-footer .caja .redes a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    background-color: rgb(29, 27, 27);
+}
+.footer .hijo-footer .caja .redes a:hover{
+    background-color: rgb(49, 48, 48);
+}
+
+@media (max-width: 700px){
+    .header{
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .navbar{
+        padding: 10px 0px;
+    }
+}
+@media (max-width: 560px){
+    .header{
+        padding-top: 15px;
+    }
+    .footer .hijo-footer{
+        grid-gap: 18px;
+    }
+    .footer .hijo-footer .caja .logofooter h2{
+        margin: 12px;
+        font-size: 25px;
+    }
+}
+@media (max-width: 450px){
+    .header{
+        padding-top: 15px;
+    }
+    .footer .hijo-footer{
+        grid-gap: 18px;
+    }
+    .footer .hijo-footer .caja .logofooter h2{
+        margin: 0px;
+        padding: 10px;
+        font-size: 25px;
+    }
+}
+@media (max-width: 40px){
+    .header{
+        padding-top: 15px;
+    }
+    .footer .hijo-footer{
+        grid-gap: 5px;
+    }
+    .footer .hijo-footer .caja h2{
+        margin-bottom: 16px;
+        font-size: 15px;
+    }
+    .footer .hijo-footer .caja .logofooter h2{
+        margin: 0px;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
